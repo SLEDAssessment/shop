@@ -1,7 +1,4 @@
-from customer import Customer
-from supplier import Supplier
-
-
+from stock import Stock
 
 print ("   M A I N - M E N U")
 print ("1. Create Customer")
@@ -9,8 +6,6 @@ print ("2. View Customers")
 print ("3. Action 3")
 print ("4. Action 4")
 print ("5. Action 5")
-
-
 
 while True:
     # Get user input:
@@ -20,8 +15,7 @@ while True:
     choice = int(choice)
 
     if choice == 1:
-       print("Create Customer...")
-       create_supplier(1,1, "farah", "farrah", 123, "test")
+        print("Create Customer...")
     elif choice == 2:
         print ("Action 2...")
         #processing #2 is done here
@@ -29,8 +23,8 @@ while True:
         print ("Action 3...")
         #processing #3 is done here
     elif choice == 4:
-        print ("Action 4...")
-        #processing #4 is done here
+        print ("Create Stock")
+        Stock.create_Stock()  
     elif choice == 5:
         print ("Action 5...")
         #processing #5 is done here
