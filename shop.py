@@ -1,4 +1,5 @@
 from customer import Customer
+from supplier import Supplier
 
 
 
@@ -9,6 +10,8 @@ print ("3. Action 3")
 print ("4. Action 4")
 print ("5. Action 5")
 
+
+
 while True:
     # Get user input:
     choice = input('Enter a choice from the menu [1-5] : ')
@@ -18,7 +21,7 @@ while True:
 
     if choice == 1:
        print("Create Customer...")
-       create_supplier()
+       create_supplier(1,1, "farah", "farrah", 123, "test")
     elif choice == 2:
         print ("Action 2...")
         #processing #2 is done here
